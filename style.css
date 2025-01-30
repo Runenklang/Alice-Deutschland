@@ -1,0 +1,118 @@
+:root {
+    --afd-hellblau: rgb(0, 158, 225);
+    --afd-dunkelblau: rgb(0, 102, 153);
+    --afd-rot: rgb(225, 0, 0);
+    --text-weiss: white;
+    --text-schwarz: black;
+    --text-gold: gold;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right, var(--afd-hellblau), var(--afd-dunkelblau));
+    color: var(--text-weiss);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Allgemeine Abschnitt-Stile */
+.abschnitt {
+    width: 100%;
+    max-width: 800px;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* 1. Abschnitt */
+.abschnitt.eins {
+    background-color: var(--afd-dunkelblau);
+    color: var(--text-weiss);
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* 2. Abschnitt */
+.abschnitt.zwei {
+    background-color: var(--afd-hellblau);
+    color: var(--afd-rot);
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* 3. Abschnitt */
+.abschnitt.drei {
+    background-color: var(--text-weiss);
+    color: var(--text-schwarz);
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: 10px 20px;
+}
+
+.abschnitt.drei .alice {
+    color: var(--text-schwarz);
+}
+
+.abschnitt.drei .fuer {
+    color: var(--afd-rot);
+}
+
+.abschnitt.drei .deutschland {
+    color: var(--text-gold);
+}
+
+/* 4. Abschnitt: Countdown */
+.abschnitt.countdown-container {
+    background-color: var(--afd-dunkelblau);
+    padding: 20px;
+}
+
+.countdown {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    color: var(--text-weiss);
+}
+
+.countdown .zeile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.countdown .unit {
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.countdown .hundertstel {
+    color: var(--afd-rot);
+}
+
+/* 5. Abschnitt */
+.abschnitt.fuenf {
+    background-color: var(--afd-hellblau);
+    padding: 10px 20px;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.abschnitt.fuenf a {
+    color: var(--afd-rot);
+    text-decoration: none;
+}
+
+.abschnitt.fuenf a:hover {
+    text-decoration: underline;
+}
